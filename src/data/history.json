@@ -1,0 +1,20 @@
+[
+  {
+    "role": "Software Developer Intern",
+    "organisation": "Qvantel Finland",
+    "startDate": "Feb, 2025",
+    "endDate": "July, 2025",
+    "experiences": [
+      "Worked on Flex Admin and Flex Engine projects using React.",
+      "Debugged and fixed real-world UI issues, including auto-refresh and navigation bugs.",
+      "Integrated third-party libraries like react-rnd and react-drag-resize.",
+      "Handled complex state management to enhance user experience.",
+      "Used ESLint to maintain clean and consistent code quality.",
+      "Managed Git workflows: branching, merging, pull requests, and resolving conflicts.",
+      "Collaborated with team members through code reviews and daily meetings.",
+      "Resolved cross-browser issues (e.g., Firefox-specific bugs).",
+      "Proactively learned React and improved frontend development skills."
+    ],
+    "imageSrc": "history/qvantel.jpg"
+  }
+]

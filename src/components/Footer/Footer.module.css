@@ -1,0 +1,171 @@
+@import "../../vars.css";
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  padding: 32px 10%;
+  gap: 20px;
+  border-top: 1px solid #444;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.copy {
+  font-size: 14px;
+  color: #bbb;
+  user-select: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+.navLinks a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  position: relative;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+/* Keep underline effect from before */
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  filter: brightness(0) invert(1); /* turn black icons white */
+  transition: filter 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: var(--color-accent);
+}
+
+.navLinks a:hover .navIcon {
+  filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(15deg);
+  /* subtle color effect on hover */
+}
+
+.socialLinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.socialLinks img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.85);
+}
+
+.socialLinks img:hover {
+  transform: scale(1.15);
+  filter: brightness(1);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 5%;
+    gap: 16px;
+  }
+
+  .logoSection {
+    align-items: center;
+  }
+
+  .navLinks {
+    justify-content: center;
+    max-width: 100%;
+    gap: 20px;
+    margin: 10px 0;
+  }
+
+  .navLinks a {
+    font-size: 16px;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navLinks {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .navLinks a {
+    font-size: 14px;
+  }
+
+  .socialLinks img {
+    width: 24px;
+    height: 24px;
+  }
+}

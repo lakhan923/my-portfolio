@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Frontend Enhancements at Qvantel",
+    "imageSrc": "projects/project.png",
+    "description": [
+      "Improved internal UI tools by implementing resizable panels, optimizing tab refresh behavior, and resolving cross-browser issues.",
+      "Integrated third-party libraries (like react-rnd) and managed complex state with React hooks.",
+      "Maintained code quality through ESLint integration and collaborative Git workflows."
+    ],
+    "technologyStack": {
+      "Language": "JavaScript",
+      "Framework": "React",
+      "Libraries": "react-rnd, react-drag-resize",
+      "Tools": "ESLint",
+      "Version Control": " Git, stash/bitbucket",
+      "IDE": "Visual Studio Code"
+    },
+    "skills": ["React", "JavaScript", "HTML", "CSS", "Git", "ESLint"]
+  },
+  {
+    "title": "Flappy Bird Game",
+    "imageSrc": "projects/flappyBird.png",
+    "description": [
+      "Developed a Flappy Bird Game using Windows Forms application in C#.",
+      "Implemented core gameplay mechanics including physics, collision detection, and scoring.",
+      "Designed and managed the UI with event-driven programming and form controls.",
+      "Demonstrated proficiency in desktop app development and C# Windows Forms."
+    ],
+    "technologyStack": {
+      "Language": "C#",
+      "Framework": "Windows Forms (.NET Framework)",
+      "Tools": "Visual Studio",
+      "Version Control": "Git and GitHub"
+    },
+    "skills": [
+      "C#",
+      "Windows Forms",
+      "UI Design",
+      "Game Logic",
+      "Sound Effects"
+    ]
+  },
+  {
+    "title": "MathQuizAdventure Game",
+    "imageSrc": "projects/mathQuiz.jpeg",
+    "description": [
+      "Developed an engaging Windows Forms application to improve math skills through interactive gameplay.",
+      "Implemented single-player and two-player modes with multiple difficulty levels and real-time timer.",
+      "Designed a leaderboard system with SQL Server/MySQL to track top scores and player details.",
+      "Created dynamic random math question generation based on selected difficulty.",
+      "Incorporated immersive sound effects and user-friendly UI using event-driven programming.",
+      "Utilized Visual Studio for development and Git for version control."
+    ],
+    "technologyStack": {
+      "Language": "C#",
+      "Framework": "Windows Forms (.NET Framework)",
+      "Database": "SQL Server / MySQL",
+      "Tools": "Visual Studio",
+      "Version Control": "Git and GitHub"
+    },
+    "skills": [
+      "C#",
+      "Windows Forms",
+      "MySQL",
+      "UI Design",
+      "Multiplayer Design",
+      "Difficulty Levels",
+      "Random Question Generation",
+      "Sound Effects"
+    ]
+  },
+  {
+    "title": "Memory Mastermind Game",
+    "imageSrc": "projects/memoryGame.jpg",
+    "description": [
+      "Built an interactive Windows Forms memory game with multiple themes including Animals, Tools, Vegetables, and Fruits.",
+      "Designed adjustable game board sizes (4x4 and 6x6) to enhance gameplay variety.",
+      "Implemented both single-player and two-player modes for dynamic user engagement.",
+      "Added countdown timer functionality to create challenge and urgency in each level.",
+      "Enabled customizable background music for an immersive experience.",
+      "Used structured event handling to manage user input, game logic, and win conditions."
+    ],
+    "technologyStack": {
+      "Language": "C#",
+      "Framework": "Windows Forms (.NET Framework)",
+      "Tools": "Visual Studio",
+      "Version Control": "Git and GitHub",
+      "Database": "SQL Server / MySQL"
+    },
+    "skills": [
+      "C#",
+      "Windows Forms",
+      "Game Logic",
+      "Event Handling",
+      "Multiplayer Design",
+      "Timer"
+    ]
+  }
+]
