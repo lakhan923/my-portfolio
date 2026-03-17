@@ -1,34 +1,134 @@
 [
   {
     "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "category": "Frontend",
+    "proficiency": 95
   },
   {
     "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "category": "Frontend",
+    "proficiency": 90
+  },
+  {
+    "title": "SCSS",
+    "category": "Frontend",
+    "proficiency": 85
+  },
+  {
+    "title": "JavaScript",
+    "category": "Frontend",
+    "proficiency": 85
   },
   {
     "title": "React",
-    "imageSrc": "skills/react.png"
+    "category": "Frontend",
+    "proficiency": 85
   },
   {
-    "title": "C-sharp",
-    "imageSrc": "skills/c-sharp.png"
+    "title": "jQuery",
+    "category": "Frontend",
+    "proficiency": 75
+  },
+
+  {
+    "title": "C#",
+    "category": "Backend",
+    "proficiency": 80
   },
   {
-    "title": "SQL",
-    "imageSrc": "skills/sql.png"
+    "title": "Java",
+    "category": "Backend",
+    "proficiency": 70
+  },
+  {
+    "title": "Python",
+    "category": "Backend",
+    "proficiency": 60
   },
   {
     "title": "PHP",
-    "imageSrc": "skills/php.png"
+    "category": "Backend",
+    "proficiency": 75
   },
   {
-    "title": "javascript",
-    "imageSrc": "skills/javaScript.png"
+    "title": "SQL",
+    "category": "Backend",
+    "proficiency": 80
   },
   {
-    "title": "Database",
-    "imageSrc": "skills/database.png"
+    "title": "REST APIs",
+    "category": "Backend",
+    "proficiency": 75
+  },
+  {
+    "title": "Windows Forms",
+    "category": "Backend",
+    "proficiency": 70
+  },
+  {
+    "title": "MySQL",
+    "category": "Backend",
+    "proficiency": 80
+  },
+  {
+    "title": "SQLite",
+    "category": "Backend",
+    "proficiency": 75
+  },
+  {
+    "title": "MariaDB",
+    "category": "Backend",
+    "proficiency": 75
+  },
+
+  {
+    "title": "Visual Studio",
+    "category": "Tools",
+    "proficiency": 85
+  },
+  {
+    "title": "VS Code",
+    "category": "Tools",
+    "proficiency": 90
+  },
+  {
+    "title": "Git",
+    "category": "Tools",
+    "proficiency": 85
+  },
+  {
+    "title": "GitHub",
+    "category": "Tools",
+    "proficiency": 85
+  },
+  {
+    "title": "Bitbucket",
+    "category": "Tools",
+    "proficiency": 75
+  },
+  {
+    "title": "Docker",
+    "category": "Tools",
+    "proficiency": 70
+  },
+  {
+    "title": "Docker Compose",
+    "category": "Tools",
+    "proficiency": 70
+  },
+  {
+    "title": "Jenkins",
+    "category": "Tools",
+    "proficiency": 65
+  },
+  {
+    "title": "WordPress",
+    "category": "Tools",
+    "proficiency": 75
+  },
+  {
+    "title": "Linux",
+    "category": "Tools",
+    "proficiency": 70
   }
 ]

@@ -8,15 +8,19 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, Welcome to My Portfolio </h1>
         <p className={styles.description}>
-          I'm a 26-year-old, passionate web developer with a knack for creating
-          beautiful and functional websites. With experience in HTML, CSS, PHP,
-          JavaScript, Database, wordpress, React, NodeJS and various frameworks.
-          I bring creativity and technical expertise to every project. Feel free
-          to explore my portfolio and reach out if you'd like to learn more!
+          I’m a 27-year-old web developer passionate about building clean,
+          functional, and visually appealing websites. I have hands-on
+          experience with{" "}
+          <strong>
+            HTML, CSS, PHP, JavaScript, React, Node.js, WordPress, databases,
+          </strong>{" "}
+          and modern frameworks. I combine creativity with technical expertise
+          to deliver impactful solutions. Explore my portfolio and feel free to
+          get in touch!
         </p>
         <div className={styles.buttons}>
           <a
-            href="https://github.com/lakhan923/Laiba_Cv"
+            href="https://github.com/lakhan923/eng_version_CV"
             className={styles.resumeBtn}
           >
             Resume

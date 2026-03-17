@@ -1,21 +1,33 @@
 [
   {
-    "title": "Frontend Enhancements at Qvantel",
-    "imageSrc": "projects/project.png",
+    "title": "Law Firm Website",
+    "imageSrc": "projects/law_firm.png",
     "description": [
-      "Improved internal UI tools by implementing resizable panels, optimizing tab refresh behavior, and resolving cross-browser issues.",
-      "Integrated third-party libraries (like react-rnd) and managed complex state with React hooks.",
-      "Maintained code quality through ESLint integration and collaborative Git workflows."
+      "Designed and developed a fully responsive and professional website for a law firm, ensuring a polished online presence.",
+      "Created a user‑friendly homepage with clear hero messaging and easy navigation that highlights core legal services.",
+      "Implemented an interactive contact form to collect client inquiries efficiently and improve lead generation.",
+      "Developed custom React components and layouts using HTML, CSS/SCSS, and JavaScript for a modern and polished UI.",
+      "Optimized the website for performance and SEO to improve load speeds and search visibility.",
+      "Ensured consistent mobile performance and accessibility across devices for a seamless user experience."
     ],
     "technologyStack": {
-      "Language": "JavaScript",
+      "Language": "JavaScript, HTML, CSS",
       "Framework": "React",
-      "Libraries": "react-rnd, react-drag-resize",
-      "Tools": "ESLint",
-      "Version Control": " Git, stash/bitbucket",
-      "IDE": "Visual Studio Code"
+      "Libraries": "React Router, Axios",
+      "Tools": "Visual Studio Code, Chrome DevTools",
+      "Version Control": "Git, GitHub"
     },
-    "skills": ["React", "JavaScript", "HTML", "CSS", "Git", "ESLint"]
+    "skills": [
+      "React",
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript",
+      "Responsive Design",
+      "UI/UX",
+      "SEO Optimization",
+      "Deployment"
+    ],
+    "link": "https://rh-law-firm.netlify.app/"
   },
   {
     "title": "Flappy Bird Game",
@@ -38,7 +50,8 @@
       "UI Design",
       "Game Logic",
       "Sound Effects"
-    ]
+    ],
+    "link": "https://laiba-khan.itch.io/flappy-bird-game"
   },
   {
     "title": "MathQuizAdventure Game",
@@ -67,7 +80,8 @@
       "Difficulty Levels",
       "Random Question Generation",
       "Sound Effects"
-    ]
+    ],
+    "link": "https://laiba-khan.itch.io/mathquizadventure"
   },
   {
     "title": "Memory Mastermind Game",
@@ -94,6 +108,7 @@
       "Event Handling",
       "Multiplayer Design",
       "Timer"
-    ]
+    ],
+    "link": "https://laiba-khan.itch.io/memory-mastermind"
   }
 ]

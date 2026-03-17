@@ -1,24 +1,20 @@
 @import "../../vars.css";
 
-/* ===== Main Container ===== */
+/* Container */
 .container {
   color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 80px 10%;
   animation: fadeIn 1s ease-in-out;
 }
 
-/* ===== Title ===== */
+/* Title */
 .title {
-  color: var(--color-text);
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
   text-align: center;
-  position: relative;
   margin-bottom: 20px;
+  color: var(--color-text);
+  position: relative;
 }
 
 .title::after {
@@ -26,93 +22,125 @@
   display: block;
   width: 60px;
   height: 4px;
-  background-color: var(--color-accent);
   margin: 10px auto 0;
   border-radius: 2px;
+  background-color: var(--color-accent);
 }
 
-/* ===== Content Wrapper ===== */
-.content {
+/* Skill Filters */
+.skillFilters {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 24px;
-  gap: 48px;
-  animation: slideUp 1s ease-in-out;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
 }
 
-/* ===== Skills Section ===== */
+.filterButton {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: var(--color-accent);
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--color-accent);
+}
+
+.filterButton:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.filterButton.active {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+/* Skills Section */
 .skills {
-  width: 100%;
-  max-width: 900px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: flex-start;
+  gap: 20px;
   justify-content: center;
-  padding-bottom: 10px;
+  margin-bottom: 60px;
 }
 
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+/* Skill Icon Container */
 .skillImageContainer {
   background-color: var(--color-secondary);
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
-.skillImageContainer i {
-  font-size: 32px;
+/* React Icons (SVG) */
+.skillImageContainer svg {
+  font-size: 40px;
   color: var(--color-accent);
 }
 
+/* Hover effect */
 .skillImageContainer:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-.skillImageContainer img {
-  width: 50px;
-  height: auto;
+.skillTitle {
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
-.skill p {
-  font-size: 18px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
-  text-align: center;
-  margin-top: 10px;
-  transition: color 0.3s ease;
-  
+/* Progress Bar */
+.progressBar {
+  display: none;
 }
 
-.skill:hover p {
-  color: var(--color-accent);
+.progress {
+  height: 100%;
+  border-radius: 3px;
+  background-color: var(--color-accent);
 }
 
-/* ===== History Section ===== */
+/* History Section */
 .history {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 .historyItem {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 24px;
-  background: linear-gradient(135deg, #112b55, #19376d, rgba(25, 55, 109, 0.1));
-  border-radius: 12px;
   padding: 24px 32px;
+  border-left: 5px solid #daa520;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #112b55, #19376d, rgba(25, 55, 109, 0.1));
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 5px solid #daa520; /* Golden accent */
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .historyItem:hover {
@@ -120,57 +148,58 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* History item image */
-.historyItem img {
+.historyLogo {
   width: 60px;
   height: 60px;
   object-fit: contain;
-}
-
-/* Text content */
-.historyItemDetails {
-  font-family: var(--font-roboto);
-  flex: 1;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .historyItemDetails h3 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   color: #fff;
 }
 
-.historyItemDetails p {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 10px;
+.dates {
+  font-size: 16px;
   color: #ccc;
+  margin-bottom: 10px;
 }
 
-.historyItemDetails ul {
-  list-style-type: disc;
-  padding-left: 18px;
+.experienceList {
+  list-style: disc;
+  padding-left: 20px;
   font-size: 16px;
   color: #ddd;
 }
 
-.historyItemDetails ul li {
+.experienceList li {
   margin-bottom: 6px;
   line-height: 1.5;
 }
 
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+/* Timeline Dot */
+.timelineDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #daa520;
+  position: absolute;
+  left: -6px;
+  top: 28px;
+}
+
+/* Responsive */
+@media (max-width: 830px) {
+  .skills {
+    gap: 15px;
   }
 
-  .skills,
-  .history {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 30px;
+  .skill {
+    width: 100px;
   }
 
   .skillImageContainer {
@@ -178,27 +207,40 @@
     height: 65px;
   }
 
-  .skillImageContainer img {
-    width: 35px;
+  .skillImageContainer svg {
+    font-size: 30px;
   }
 
-  .skill p {
-    font-size: 16px;
+  .historyItem {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .historyItem img {
-    margin-bottom: 12px;
+  .historyLogo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .skillTitle {
+    font-size: 14px;
   }
 
   .historyItemDetails h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
-  .historyItemDetails p {
-    font-size: 16px;
+  .dates {
+    font-size: 14px;
   }
 
-  .historyItemDetails ul li {
-    font-size: 16px;
+  .experienceList li {
+    font-size: 14px;
   }
 }
